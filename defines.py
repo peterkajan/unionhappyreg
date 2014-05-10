@@ -173,3 +173,11 @@ accomodationLabels = {
      'yes' : u'áno',
      'no'  : u'bez ubytovania',
 }
+
+tshirts = (
+    'S',
+    'M',
+    'L',
+    'XL',
+    'XXL',
+)

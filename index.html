@@ -144,6 +144,17 @@
       
       </div> 
       
+      <div class="other">
+      	 Veľkosť trička 
+         <select id="tshirt" name="tshirt" class="tshirt {% if 'thirt' in errorIds %} error {% endif%}">
+            <option value="" selected="selected">-- Vyberte veľkosť --</option>
+            {% for value in tshirts %}
+                <option value="{{value}}" {% if p.tshirt == value %} selected="selected" {% endif %}>{{value}}</option>
+            {% endfor %}
+         </select>
+      </div>
+      
+      
       <div>
 				<input type="submit" value="Ďalej" style="margin-bottom:50px; margin-top:10px;"/>
 			</div>
