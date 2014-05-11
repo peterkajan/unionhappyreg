@@ -78,7 +78,8 @@ body {
 	background-position: top center;
 	background-color: black;
 	background-repeat: no-repeat;
-	min-width: 300px;
+	min-width: 520px;
+	min-height: 650px;
 }
 
 textarea, input[type=text] {
@@ -157,6 +158,18 @@ h1 {
 	
 }
 
+h4 {
+    color: rgb(179,220,24);
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 21px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    /*float: left;*/
+    font-style: italic;
+    
+}
+
 
 
 
@@ -216,6 +229,7 @@ span {
 
 .container{
     margin: 0px;
+    padding: 10px;
     float: left;
 }
 
@@ -257,7 +271,7 @@ span {
     
     /*display: inline-block;*/
     
-    padding: 18px 50px 18px 50px;
+    padding: 18px 35px 18px 35px;
     /*float: left;*/
     text-align: center;
     border-radius: 100px;
@@ -268,6 +282,31 @@ span {
     font-size: 18px;
     height: 300px;
     width: 300px;
+}
+
+.headingdivC {
+    /*border-style:solid;
+     border-color:white;
+     border-width:10px;*/
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 10px;
+    
+    display: table-cell;
+    vertical-align: middle;
+    
+    /*display: inline-block;*/
+    
+    padding: 18px 35px 0px 35px;
+    /*float: left;*/
+    text-align: center;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    /*width: 50%;*/
+    color: #fff;
+    font-size: 18px;
+    height: 200px;
+    width: 500px;
 }
 
 
@@ -421,7 +460,7 @@ span {
 }
 
 .other-activity {
-    top: 73%;
+    top: 400px;
 	color: #fff;
 	font-size: 18px;
 	background-color: rgba(0,0,0,0.55);
