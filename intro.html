@@ -1,104 +1,73 @@
 <!DOCTYPE html>
-{% autoescape true %}
 <html>
   <head>
-	  <title>Noc filmových hviezd</title>
-	  <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+    <title>Happy Union</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/intro.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   </head>
   
-  <body class="intro">
-  
-      <div class="introcenter">  
-          <p>
-            <b> Union poisťovňa </b> v spolupráci s <b> Union zdravotnou poisťovňou </b> uvádzajú:
-          </p>
-      </div> 
-  
-  <img src="../images/imgnoveintro.png" alt="intro" style="display:block; margin-left:auto; margin-right:auto;">
-      
-  <div style="margin: auto; display: table;">
-      <div class="fline">  
-          <p>
-            <b>KEDY</b> 
-            <br>
-            20.12.2013 o 19:00 
-          </p>
-      </div> 
-      
-      <div class="fline">  
-          <p>
-            <b>V HLAVNEJ ÚLOHE</b> 
-            <br>
-            Kolektív zamestnancov UNION 
-          </p>
-      </div> 
+  <body>
+    <div class="confirmation-content">
+        <div class="leftUnionLogo"></div>
+        <div class="rightUnionLogo"></div>
 
-      <div class="fline">  
-          <p>
-            <b>KDE</b> 
+        <div class="headingdiv">
+            <h1>HAPPY HÝBE SVETOM</h1> 
             <br>
-            Hotel Crowne Plaza
             <br>
-            Hodžovo námestie 2
+            <h2>
+                Preto je tu ďalší <b>UNION FESTIVAL ZDRAVIA!</b>
+                <br>
+                Tento rok budeme "Happy a svetoví".
+            </h2>
+        </div>
+        
+ 
+         <div class="headingdivR">
+            <h2><b><span>KEDY:</span></b>  3.júna od 14:00 do 03:00 </h2>
             <br>
-            Bratislava 
-          </p>
-      </div> 
-   </div>   
-      <div class="introcenter" style="margin-top:-47px;">   
-          <p>
-            <b>ĎALEJ HRAJÚ</b> 
-            <br> 
-            Improvizačná divadelná skupina 3T 
-          </p>          
-          <p>
-            <b>HUDBA</b> 
-            <br> 
-            Jana Kirschner & band <br>
-            Deravé krpce a rolničky
-          </p>          
-
-          <p>
-            <b>MAJSTER ZVUKU</b> 
             <br>
-            DJ Flebo 
-          </p>
-
-		  {% if not last %}
-	          <p>
-	            <b>REZERVUJTE</b> si preto Váš čas a vydajte sa po červenom koberci na vianočnú párty, aká tu ešte nebola! 
-	          </p>  
-	
-	          <p> 
-	            Pre potvrdenie účasti vyplňte, prosím, prihlasovací formulár  
-	          </p>
-          {% endif %}
-      </div> 
-      {% if not last %}
-	      <div> 
-	          <form action="main">
-	            <input type="submit" value="TU" class="startbutton"/>
-	          </form>
-	      </div>
-	  {% endif %}
-      <div class="introcenter">
-        {% if not last %}
-	        <p>
-	          najneskôr do 6.12. 2013. 
-	        </p>
-        {% endif %}
-        <p style="font-size: 12px;">
-          <b>V PRÍPADE AKÝCHKOĽVEK OTÁZOK,</b>
-          <br> 
-          sa môžete obrátiť na organizačný tím
-          <br>  
-          na e-mailovej adrese <a style="color: #D6944B;" href="mailto:union@branda.sk">union@branda.sk</a>.
-        </p>         
-      </div>
-      
-      <img src="../images/uniongold.png" alt="intro" style="display:block; margin-left:auto; margin-right:auto;">
-  
-  
+            <h2><b><span>KDE:</span></b> v  ELFO Clube v Malinove </h2>
+            <br>   
+            <br>
+            <h2>Smiech a dobrú náladu budú rozdávať moderátori <b><span>MIŇO a DIDIANA</span></b></h2>
+            <br>
+            <h2>O pravú večernú tanečnú zábavu sa postará <b><span>DJ  CARLO</span></b></h2>
+        </div>
+     
+        <!-- <div class="headingdivL">
+           <h2>Smiech a dobrú náladu budú rozdávať moderátori <b>MIŇO a DIDIANA</b></h2>
+           <br>
+           <h2>O pravú večernú tanečnú zábavu sa postará <b>DJ  CARLO</b></h2>
+        </div> -->        
+ 
+         <div class="headingdivL">
+           <h2><b><span>VIDÍME A BAVÍME SA PODĽA VÁŠHO GUSTA</span></b></h2>
+           <br>
+           <br>
+           <h2>               
+            Tento rok sme si nechali poradiť, pripravíme <b>Festival zdravia na Vaše želanie!</b>
+            Ďakujeme preto všetkým kolegom, ktorí sa zúčastnili na vyplnení dotazníka.
+            Program plný zdravého pohybu, pohody, smiechu a relaxu bude zostavený podľa najžiadanejších aktivít a Vašich najlepších nápadov
+            <br>
+            <br>
+            <b><span>Tešíme sa na Vás!</span></b>
+           </h2>
+        </div>
+ 
+ 
+ 
+ 
+ 
+    <div class="page_container">
+        <div class="other-activity">
+            Veríme, že aj vďaka Vám bude tento rok <b>UNION FESTIVAL ZDRAVIA</b> skutočne <b>HAPPY!</b>
+            <br>
+            Ďalšie informácie čakajte čoskoro.            
+        </div>
+    </div>      
+        
+    </div>
+    
   </body>
 </html>
-{% endautoescape %}
