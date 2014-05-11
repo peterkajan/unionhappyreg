@@ -78,7 +78,7 @@ body {
 	background-position: top center;
 	background-color: black;
 	background-repeat: no-repeat;
-	min-width: 1000px;
+	min-width: 300px;
 }
 
 textarea, input[type=text] {
@@ -141,7 +141,7 @@ a {
 
 h1, h2 {
 	/*width: 100%;*/
-	float: left;
+	/*float: left;*/
 	/*display: inline;*/
 }
 
@@ -149,10 +149,10 @@ h1 {
 	color: rgb(179,220,24);
 	margin: 0px;
 	margin-bottom: 5px;
-	font-size: 33px;
+	font-size: 26px;
 	letter-spacing: -1px;
 	font-weight: bold;
-	float: left;
+	/*float: left;*/
 	font-style: italic;
 	
 }
@@ -176,7 +176,7 @@ h1 {
  198 208 0
  }*/
 
-h2 {
+h3 {
 	color: #fff;
 	font-weight: 500;
 	margin: 0px;
@@ -184,14 +184,46 @@ h2 {
 	/*text-align: left;*/
 	letter-spacing: 0px;
 	font-style: italic;
-	font-size: 18px;
+	font-size: 21px;
 	display: inline;
-	float: left;
+	/*float: left;*/
 }
+
+h2 {
+    color: #fff;
+    font-weight: 500;
+    margin: 0px;
+    margin-top: 5px;
+    /*text-align: left;*/
+    letter-spacing: 0px;
+    font-style: italic;
+    font-size: 18px;
+    display: inline;
+    /*float: left;*/
+}
+
 
 span {
     color: rgb(179,220,24);
- 
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 36px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    /*float: left;*/
+    font-style: italic;
+ }
+
+.container{
+    margin: 0px;
+    float: left;
+}
+
+.centering-container{
+    /*margin-left: auto;*/
+    padding-top: 20px;
+    display: table;
+    margin: 0 auto;
 }
 
 
@@ -202,13 +234,13 @@ span {
 	background-color: rgba(0, 0, 0, 0.6);
 	margin-top: 20px;
 	display: inline-block;
-	padding: 18px 20px 18px 189px;
+	padding: 18px 50px 18px 50px;
 	float: left;
-	text-align: left;
-	border-radius: 0px 100px 100px 0px;
-	-webkit-border-radius: 0px 100px 100px 0px;
-	-moz-border-radius: 0px 100px 100px 0px;
-	width: 30%;
+	text-align: center;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	/*width: 30%;*/
 	color: #fff;
     font-size: 18px;
 }
@@ -218,17 +250,24 @@ span {
      border-color:white;
      border-width:10px;*/
     background-color: rgba(0, 0, 0, 0.6);
-    margin-top: 0px;
-    display: inline-block;
-    padding: 18px 20px 18px 189px;
-    float: left;
-    text-align: left;
-    border-radius: 0px 100px 100px 0px;
-    -webkit-border-radius: 0px 100px 100px 0px;
-    -moz-border-radius: 0px 100px 100px 0px;
-    width: 50%;
+    margin: 10px;
+    
+    display: table-cell;
+    vertical-align: middle;
+    
+    /*display: inline-block;*/
+    
+    padding: 18px 50px 18px 50px;
+    /*float: left;*/
+    text-align: center;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    /*width: 50%;*/
     color: #fff;
     font-size: 18px;
+    height: 300px;
+    width: 300px;
 }
 
 
@@ -240,13 +279,13 @@ span {
     background-color: rgba(0, 0, 0, 0.6);
     margin-top: 0px;
     display: inline-block;
-    padding: 18px 150px 18px 58px;
+    padding: 18px 50px 18px 50px;
     float: right;
-    text-align: left;
-    border-radius: 100px 0px 0px 100px;
-    -webkit-border-radius:  100px 0px 0px 100px;
-    -moz-border-radius:  100px 0px 0px 100px;
-    width: 50%;
+    text-align: center;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    /*width: 50%;*/
     color: #fff;
     font-size: 18px;
 }
@@ -407,12 +446,12 @@ span {
     text-align:center;
 }
 
-.page1 .other-activity{
+/*.page1 .other-activity{
     text-align:left;
     top:50%;
     margin-top:100px;
     max-width:500px;    
-}
+}*/
 
 .other-activity-column {
 	width: 400px;
@@ -437,7 +476,7 @@ span {
 }*/
 
 
-.joke {
+/*.joke {
     width: 400px;
     text-align:left;
     position: absolute;
@@ -456,7 +495,7 @@ span {
 	    font-style: italic;
 	    font-size: 18px;
 	    width: 500px;
-	}
+	}*/
 /*.main section > img {
  position: absolute;
  max-width: 100%;
@@ -583,7 +622,7 @@ span {
     }
 
 
-.next-page-btn-container {
+/*.next-page-btn-container {
 	width: 30px;
 	height: 30px;
 	border-radius: 50px;
@@ -630,8 +669,7 @@ span {
 
 .next-page-btn:hover {
 	opacity: 0.8;
-}
-
+}*/
 .progress {
 	position: absolute;
 	width: 100%;
