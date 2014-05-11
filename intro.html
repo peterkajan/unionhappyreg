@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+{% autoescape true %}
 <html>
   <head>
-    <title>Happy Union</title>
+    <title>Happy Union 2014</title>
     <link type="text/css" rel="stylesheet" href="/stylesheets/intro.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   </head>
@@ -61,7 +62,9 @@
         <div class="headingdivC">
             <h2>Pre potvrdenie účasti, vyplňte prosím prihlasovací formulár:</h2>
             <br>
-            <a href="../index.html" class="sbutton">Prihlasovanie TU</a>
+            <form action="/main" method="post">
+            <input type="submit" value="Prihlasovanie TU" class="sbutton">
+            </form>
             <br>
             <h2>Najneskôr do <b>6.júna</b> 2014.</h2>      
             <br>
@@ -75,3 +78,4 @@
     
   </body>
 </html>
+{% endautoescape %}

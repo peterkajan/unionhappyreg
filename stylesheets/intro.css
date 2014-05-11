@@ -62,6 +62,10 @@ html {
     padding: 0;
 }
 
+input[type=submit] {
+    border: none;
+}
+
 .name input[type=text]:focus {
 	background-color: rgba(0,0,0,0.5);
 }
@@ -296,7 +300,7 @@ span {
     
     /*display: inline-block;*/
     
-    padding: 18px 60px 0px 60px;
+    padding: 18px 60px 5px 60px;
     /*float: left;*/
     text-align: center;
     border-radius: 100px;
@@ -353,7 +357,7 @@ span {
     /*text-shadow:0px 1px 0px #2f6627;*/
 }
 .sbutton:hover {
-    background-color:rgb(189,230,34);
+    background-color:rgb(159,200,4);
 }
 .sbutton:active {
     position:relative;
