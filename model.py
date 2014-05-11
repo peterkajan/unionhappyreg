@@ -27,6 +27,7 @@ class EmployeeEntity(ndb.Model):
     employer = ndb.StringProperty(required = True)
     workplace = ndb.StringProperty(required = True)
     accomodation = ndb.StringProperty()
+    transport = ndb.StringProperty()
     residence = ndb.StringProperty()
     roommate = ndb.StringProperty()
     character = ndb.StringProperty(required = True)
@@ -39,6 +40,7 @@ class EmployeeEntity(ndb.Model):
         self.employer       = emp.employer    
         self.workplace      = emp.workplace   
         self.accomodation   = emp.accomodation
+        self.transport      = emp.transport
         self.residence      = emp.residence   
         self.roommate       = emp.roommate    
         self.character      = emp.character

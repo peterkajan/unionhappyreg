@@ -97,6 +97,14 @@
         </label>        
       </div>
       
+       <div class="other accomCheck">
+        <label>
+            <input type="checkbox" class="check accomCheck" name="transport" value="yes" {% if p.transport == "yes" %} checked {% endif %} />
+            Mám záujem o dopravu autobusom
+        </label>        
+      </div>
+      
+      
       <div>
 	      <div class="nadpis" style="display:inline-block; float:left;">
 	        <img src="../images/star.png" alt="little star" />
@@ -153,6 +161,8 @@
             {% endfor %}
          </select>
       </div>
+      
+      
       
       
       <div>

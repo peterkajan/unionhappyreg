@@ -141,6 +141,14 @@ class MainPage(BaseHandler):
             else:
                 empl.accomodation = 'no'
         
+        if hasAccomodationRight(empl.workplace):
+            if (self.request.get('transport')):
+                empl.transport = 'yes'
+                
+            else:
+                empl.transport = 'no'
+        
+        
         persistEmployee( empl )
         try:
             sendMail(empl)
