@@ -385,8 +385,8 @@ span {
     top: 73%;
 	color: #fff;
 	font-size: 18px;
-	background-color: rgba(0,0,0,0.6);
-	padding: 15px 40px 15px 40px;
+	background-color: rgba(0,0,0,0.55);
+	padding: 15px 70px 15px 70px;
 	border-radius: 100px;
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
@@ -403,7 +403,7 @@ span {
 
 .confirmation-content .other-activity{
     left: 50%;    
-    margin-left: -289px;
+    margin-left: -309px;
     text-align:center;
 }
 
