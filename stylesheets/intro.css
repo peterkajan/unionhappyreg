@@ -75,7 +75,6 @@ body {
 	text-align: center;
 	position: relative;
 	margin: 0;
-	height: 100%;
 	-webkit-font-smoothing: antialiased;
 	font-family: helvetica, arial, sans-serif;
 	font-style:italic;
@@ -130,8 +129,7 @@ textarea:focus, input[type=text]:focus {
 }
 
 .confirmation-content {
-	height: 100%;
-	width: 100%;
+
 	background: url('../images/background10.jpg');
 	background-size: cover;
 }
