@@ -6,11 +6,14 @@ body {
 }
 
 body.reg {
+    
+    -webkit-font-smoothing: antialiased;
+    font-family: helvetica, arial, sans-serif;
+    font-style:italic;
 	margin-top: 0px;
-	font-family: Verdana, Tahoma, sans-serif;
-	background-repeat: repeat-y;
+	background-repeat: no-repeat;
 	background-position: center top;
-	background-color: black;
+	background-color: #fff;
 }
 
 body.res {
@@ -70,11 +73,11 @@ input, textarea {
 	position: relative;
 	padding: 4px;
 	outline: 0;
-	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	font: normal 13px/100%;
 	width: 150px;
-	background-color: black;
-	border: solid 3px #D6944B;
-	color: #D6944B;
+	background-color: #fff;
+	border: solid 3px rgb(179,220,24);
+	color: black;
 }
 
 textarea {
