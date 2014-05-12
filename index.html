@@ -10,10 +10,10 @@
   
   <body class="reg" onload="checkAcc()">
     
-  <img class="nadpis" src="../images/apples.png" alt="apples" />
+  <img class="nadpis" src="../images/apples.jpg" alt="apples" />
   <div class="form">
 		<form action="/main" method="post">
-    
+   
       <div class="errorMsg">
         {% for error in errors %}
             {{error}}<br/>
@@ -21,7 +21,7 @@
       </div>
     
       <div class="nadpis">
-        <img src="../images/star.png" alt="little star"/>
+        <!-- <img src="../images/appleG.png" alt="little star"/> -->
         VAŠE MENO
       </div>
      
@@ -35,7 +35,7 @@
             
    
     <div class="nadpis" style="display:inline-block; float:left;">
-        <img src="../images/star.png" alt="little star"/>
+        <!-- <img src="../images/appleR.png" alt="little star"/> -->
         E-MAIL
     </div>
     
@@ -45,7 +45,7 @@
 	  </div>
    
       <div class="nadpis" style="display:inline-block; float:left;"> 
-        <img src="../images/star.png" alt="little star"/>
+        <!-- <img src="../images/appleG.png" alt="little star"/> -->
         ZAMESTNÁVATEĽ   
       </div>   
       
@@ -67,11 +67,11 @@
   	
       
       <div class="nadpis">
-        <img src="../images/star.png" alt="little star"/>
+        <!-- <img src="../images/appleR.png" alt="little star"/> -->
         VAŠE PRACOVISKO
       </div> 
       <div class="other"> 
-         <select id="workplace" name="workplace" style="width:163px;" class="workplace {% if 'workplace' in errorIds %} error {% endif%}">
+         <select id="workplace" name="workplace" style="width:180px;" class="workplace {% if 'workplace' in errorIds %} error {% endif%}">
              <option value="" disabled="disabled" selected="selected">-- Vyberte pracovisko --</option>
             {% for value in orderedWorkplaces  %}
                 <option value="{{value}}" {% if p.workplace == value %} selected="selected" {% endif %}>{{workplaces[value]}}</option>
@@ -81,7 +81,7 @@
 
       
       <div class="nadpis" style="display:inline-block; float:left;"> 
-        <img src="../images/star.png" alt="little star"/>
+        <!-- <img src="../images/appleG.png" alt="little star"/> -->
         UBYTOVANIE   
       </div> 
         
@@ -99,7 +99,7 @@
       
       <div>
 	      <div class="nadpis" style="display:inline-block; float:left;">
-	        <img src="../images/star.png" alt="little star" />
+	        <!-- <img src="../images/appleR.png" alt="little star" /> -->
 				  TRVALÉ BYDLISKO
 	      </div> 
 	      
@@ -115,7 +115,7 @@
 	  </div>
       
 			<div class="nadpis" style="display:inline-block; float:left;">
-        <img src="../images/star.png" alt="little star" />
+        <!-- <img src="../images/appleG.png" alt="little star" /> -->
 			  SPOLUBÝVAJÚCI
       </div> 
       
@@ -127,9 +127,41 @@
 			  <input maxlength="200" type="text" name="roommate" value="{{p.roommate}}" class="accom{% if 'roommate' in errorIds %} error{% endif%}"/>
       </div>
       
+ 
+ 
+ 
+      <div class="nadpis">
+        <!-- <img src="../images/appleR.png" alt="little star"/> -->
+        DOPRAVA BA-MALINOVO-BA
+      </div> 
+       <div class="other">
+        <label>
+            <input type="checkbox" class="check" name="transport" value="yes" {% if p.transport == "yes" %} checked {% endif %} />
+            Mám záujem o dopravu autobusom
+        </label>        
+      </div>
+      
       
       <div class="nadpis">
-        <img src="../images/star.png" alt="little star" />
+        <!-- <img src="../images/appleR.png" alt="little star"/> -->
+        VEĽKOSŤ TRIČKA
+      </div> 
+      <div class="other">
+         Veľkosť trička 
+         <select id="tshirt" name="tshirt" style="width:180px;" class="tshirt {% if 'tshirt' in errorIds %} error {% endif%}">
+            <option value="" selected="selected">-- Vyberte veľkosť --</option>
+            {% for value in tshirts %}
+                <option value="{{value}}" {% if p.tshirt == value %} selected="selected" {% endif %}>{{value}}</option>
+            {% endfor %}
+         </select>
+      </div>
+
+ 
+ 
+ 
+      
+      <div class="nadpis">
+        <!-- <img src="../images/appleR.png" alt="little star" /> -->
 			  INFORMAČNÉ POKYNY
       </div> 
       
@@ -144,28 +176,12 @@
       
       </div> 
       
-      <div class="other">
-        <label>
-            <input type="checkbox" class="check" name="transport" value="yes" {% if p.transport == "yes" %} checked {% endif %} />
-            Mám záujem o dopravu autobusom
-        </label>        
-      </div>
-      
-      <div class="other">
-      	 Veľkosť trička 
-         <select id="tshirt" name="tshirt" class="tshirt {% if 'tshirt' in errorIds %} error {% endif%}">
-            <option value="" selected="selected">-- Vyberte veľkosť --</option>
-            {% for value in tshirts %}
-                <option value="{{value}}" {% if p.tshirt == value %} selected="selected" {% endif %}>{{value}}</option>
-            {% endfor %}
-         </select>
-      </div>
       
       
       
       
       <div>
-				<input type="submit" value="Ďalej" style="margin-bottom:50px; margin-top:10px;"/>
+				<input type="submit" value="Ďalej" style="margin-bottom:50px; margin-top:10px; background-color: #c4d001; color:#fff"/>
 			</div>
       
       
