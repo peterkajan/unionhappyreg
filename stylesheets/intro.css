@@ -163,7 +163,7 @@ h1 {
 }
 
 h4 {
-    color: rgb(179,220,24);
+    color: #fff;
     margin: 0px;
     margin-bottom: 5px;
     font-size: 21px;
@@ -267,7 +267,7 @@ span {
     /*border-style:solid;
      border-color:white;
      border-width:10px;*/
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     margin: 10px;
     
     display: table-cell;
@@ -292,7 +292,7 @@ span {
     /*border-style:solid;
      border-color:white;
      border-width:10px;*/
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     margin: 10px;
     
     display: table-cell;
@@ -352,7 +352,7 @@ span {
     font-size:24px;
     font-weight:bold;
     font-style:italic;
-    padding:17px 73px;
+    padding:17px 40px;
     text-decoration:none;
     /*text-shadow:0px 1px 0px #2f6627;*/
 }
