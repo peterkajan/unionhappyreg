@@ -103,15 +103,19 @@ class MainPage(BaseHandler):
             errors.append( getUnenteredMsg( WORKPLACE ))
             errorIds.append('workplace')
             
-        if workplace != 'BA':                                           #todo extract fn
-            if ( self.request.get('accomodation') ):
-                if not self.request.get('residence'):
-                    errors.append( getUnenteredMsg( RESIDENCE ))
-                    errorIds.append('residence')
+        if hasAccomodationRight(workplace) \
+        and self.request.get('accomodation'):
+            if not self.request.get('residence'):
+                errors.append( getUnenteredMsg( RESIDENCE ))
+                errorIds.append('residence')
+                
+            if not self.request.get('roommate'):
+                errors.append( getUnenteredMsg( ROOMMATE ))
+                errorIds.append('roommate')
                     
-                if not self.request.get('roommate'):
-                    errors.append( getUnenteredMsg( ROOMMATE ))
-                    errorIds.append('roommate')
+        if not self.request.get('tshirt'):
+            errors.append( getUnenteredMsg( TSHIRT ))
+            errorIds.append('tshirt')
         
         return (errors, errorIds, key)
             
@@ -141,13 +145,10 @@ class MainPage(BaseHandler):
             else:
                 empl.accomodation = 'no'
         
-        if hasAccomodationRight(empl.workplace):
-            if (self.request.get('transport')):
-                empl.transport = 'yes'
-                
-            else:
-                empl.transport = 'no'
-        
+        if (self.request.get('transport')):
+            empl.transport = 'yes'    
+        else:
+            empl.transport = 'no'
         
         persistEmployee( empl )
         try:
