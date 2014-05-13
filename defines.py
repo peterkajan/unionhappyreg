@@ -25,15 +25,12 @@ labels = {
 }
 
 MAIL_FROM = 'union@branda.sk'
-MAIL_SUBJECT = u'Noc filmových hviezd UNION'
+MAIL_SUBJECT = u'Union Happy | Festival Zdravia 2014 - Potvrdenie registrácie'
 
 MAIL_TEXT = u"""
-Ďakujeme za vyplnenie dotazníku, a zároveň potvrdzujeme zaregistrovanie Vašich údajov do databázy potvrdených účastníkov na vianočný večierok – Noc filmových hviezd UNION.
+Ďakujeme za vyplnenie dotazníku, a zároveň potvrdzujeme zaregistrovanie Vašich údajov do databázy potvrdených účastníkov na Union Festival Zdravia 2014.
 
-Na základe Vašich odpovedí Vám bola vygenerovaná maska %(fig)s. 
-Budeme veľmi radi, ak prídete na vianočný večierok v tejto maske, filmový dress code ale nie je povinný. 
-
-Pripomíname, že vianočný večierok sa koná dňa 20.12.2013 o 19:00 v bratislavskom hoteli Crowne Plaza.
+Pripomíname, že Festival Zdravia Union 2014 sa koná v piatok 13. júna 2014.
 
 Vaše registračné údaje si môžete skontrolovať tu:
 
@@ -47,6 +44,8 @@ Váš preferovaný spolubývajúci: %(rmt)s
 Adresa Vášho trvalého bydliska: %(res)s
 
 V prípade akýchkoľvek nejasností, kontaktujte prosím organizačný tím na e-mailovej adrese union@branda.sk.
+Tešíme sa na Vás.
+Organizačný tím
 """
 
 ERROR_EMAIL_INVALID = u'Zadali ste nesprávny email'
