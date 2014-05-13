@@ -145,7 +145,7 @@ def sendMail(empl):
     userAddress = empl.email
     senderAddress = MAIL_FROM
     subject = MAIL_SUBJECT
-    #todo convert database data to displayable
+    
     body = MAIL_TEXT % \
     {
         FIRST_NAME      : empl.firstname,

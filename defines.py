@@ -40,7 +40,8 @@ Vaše Pracovisko: %(wrk)s
 Doprava Ba-Malinovo-Ba: %(tra)s
 Ubytovanie v hoteli Chopin: %(acc)s
 Váš preferovaný spolubývajúci: %(rmt)s
-Adresa Vášho trvalého bydliska: %(res)s
+Adresa Vášho trvalého bydliska: 
+%(res)s
 
 V prípade akýchkoľvek nejasností, kontaktujte prosím organizačný tím na e-mailovej adrese union@branda.sk.
 Tešíme sa na Vás.

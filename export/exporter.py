@@ -11,7 +11,7 @@ class EmployeeEntity(db.Model):
     accomodation = db.StringProperty()
     residence = db.StringProperty()
     roommate = db.StringProperty()
-    character = db.StringProperty()
+    transport = db.StringProperty()
 
 
 def toUtf8( str ):
@@ -31,7 +31,7 @@ class AlbumExporter(bulkloader.Exporter):
                                      ('accomodation', toUtf8, ''),
                                      ('residence', toUtf8, ''),
                                      ('roommate', toUtf8, ''),
-                                     ('character', toUtf8, ''),
+                                     ('transport', toUtf8, ''),
                                     ])
 
 
