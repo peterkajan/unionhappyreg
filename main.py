@@ -113,10 +113,6 @@ class MainPage(BaseHandler):
                 errors.append( getUnenteredMsg( ROOMMATE ))
                 errorIds.append('roommate')
                     
-        if not self.request.get('tshirt'):
-            errors.append( getUnenteredMsg( TSHIRT ))
-            errorIds.append('tshirt')
-        
         return (errors, errorIds, key)
             
             
