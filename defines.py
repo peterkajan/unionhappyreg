@@ -8,7 +8,6 @@ ACCOMODATION = 'acc'
 RESIDENCE = 'res'
 ROOMMATE = 'rmt'
 CHARACTER = 'fig'
-TSHIRT = 'tsh'
 
 GENDER = 'gender'
 
@@ -21,7 +20,6 @@ labels = {
     ACCOMODATION :  u'záujem o ubytovanie',
     RESIDENCE :     u'bydlisko',
     ROOMMATE:       u'spolubývajúci',
-    TSHIRT :        u'tričko',
 }
 
 MAIL_FROM = 'union@branda.sk'
@@ -175,11 +173,3 @@ accomodationLabels = {
      'yes' : u'áno',
      'no'  : u'bez ubytovania',
 }
-
-tshirts = (
-    'S',
-    'M',
-    'L',
-    'XL',
-    'XXL',
-)

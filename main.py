@@ -39,7 +39,6 @@ class MainPage(BaseHandler):
     def displayPage(self, params={}, errors=[], errorIds=[]):
         template_values = {
             'workplaces': workplaces,
-            'tshirts' : tshirts,
             'orderedWorkplaces': orderedWorkplaces,
             'p': params,
             'errors': errors,
@@ -132,7 +131,6 @@ class MainPage(BaseHandler):
         empl.email = email
         empl.employer = self.request.get('employer')
         empl.workplace = self.request.get('workplace')
-        empl.tshirt = self.request.get('tshirt')
         if hasAccomodationRight(empl.workplace):
             if (self.request.get('accomodation')):
                 empl.accomodation = 'yes'

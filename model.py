@@ -18,7 +18,8 @@ class Employee:
     residence = ''
     roommate = ''
     character = ''
-    thsirt=''
+    transport = 'no'
+    
     
 class EmployeeEntity(ndb.Model):
     firstname = ndb.StringProperty(required = True)
@@ -31,7 +32,6 @@ class EmployeeEntity(ndb.Model):
     residence = ndb.StringProperty()
     roommate = ndb.StringProperty()
     character = ndb.StringProperty(required = True)
-    tshirt = ndb.StringProperty()
     
     def set(self, emp):
         self.firstname      = emp.firstname   
@@ -43,8 +43,7 @@ class EmployeeEntity(ndb.Model):
         self.transport      = emp.transport
         self.residence      = emp.residence   
         self.roommate       = emp.roommate    
-        self.character      = emp.character
-        self.tshirt         = emp.tshirt   
+        self.character      = emp.character 
         
 def persistEmployee( empl ):
     #todo another email check 
