@@ -8,6 +8,7 @@ ACCOMODATION = 'acc'
 RESIDENCE = 'res'
 ROOMMATE = 'rmt'
 CHARACTER = 'fig'
+TRANSPORT = 'tra'
 
 GENDER = 'gender'
 
@@ -20,6 +21,7 @@ labels = {
     ACCOMODATION :  u'záujem o ubytovanie',
     RESIDENCE :     u'bydlisko',
     ROOMMATE:       u'spolubývajúci',
+    TRANSPORT:      u'doprava',
 }
 
 MAIL_FROM = 'union@branda.sk'
@@ -39,7 +41,8 @@ Krstné meno: %(fn)s
 Priezvisko: %(ln)s
 Zamestnávatel: %(emp)s
 Vaše Pracovisko: %(wrk)s
-Ubytovanie v hoteli Crowne Plaza: %(acc)s
+Doprava Ba-Malinovo-Ba: %(tra)s
+Ubytovanie v hoteli Chopin: %(acc)s
 Váš preferovaný spolubývajúci: %(rmt)s
 Adresa Vášho trvalého bydliska: %(res)s
 
@@ -173,3 +176,4 @@ accomodationLabels = {
      'yes' : u'áno',
      'no'  : u'bez ubytovania',
 }
+
