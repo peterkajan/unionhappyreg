@@ -18,23 +18,6 @@ body.reg {
 	background-color: #fff;
 }
 
-/*body.res {
-	font-family: Verdana, Tahoma, sans-serif;
-	background-image: url('../images/bgres.png');
-	background-repeat: repeat-y;
-	background-position: center top;
-	background-color: #FFFFFF;
-	margin: 0;
-}
-
-body.intro {
-	font-family: Verdana, Tahoma, sans-serif;
-	background-image: no-image;
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-color: black;
-}*/
-
 /* error styles input, select and radio boxes */
 
 textarea.error, input.error {
@@ -234,6 +217,7 @@ div.ankete {
 	font-size: 13px;
 	color: #747474;
 	text-align: justify;
+	padding-right: 3px;
 }
 
 div.instructions {

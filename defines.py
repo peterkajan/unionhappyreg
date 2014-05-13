@@ -27,7 +27,7 @@ MAIL_FROM = 'union@branda.sk'
 MAIL_SUBJECT = u'Union Happy | Festival Zdravia 2014 - Potvrdenie registrácie'
 
 MAIL_TEXT = u"""
-Ďakujeme za vyplnenie dotazníku, a zároveň potvrdzujeme zaregistrovanie Vašich údajov do databázy potvrdených účastníkov na Union Festival Zdravia 2014.
+Ďakujeme za vyplnenie dotazníku a zároveň potvrdzujeme zaregistrovanie Vašich údajov do databázy potvrdených účastníkov na Union Festival Zdravia 2014.
 
 Pripomíname, že Festival Zdravia Union 2014 sa koná v piatok 13. júna 2014.
 
