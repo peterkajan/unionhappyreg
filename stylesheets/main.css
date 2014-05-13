@@ -38,16 +38,26 @@ body.intro {
 /* error styles input, select and radio boxes */
 
 textarea.error, input.error {
-	outline: solid 1px red;
+     -moz-box-shadow: 0px 0px 2pt 1pt red;
+     -webkit-box-shadow: 0px 0px 2pt 1pt red;
+     box-shadow: 0px 0px 2pt 1pt red;
+	/*outline: solid 1px red;*/
+	
 }
 
 select.error {
-	outline: solid 1px red;
+     -moz-box-shadow: 0px 0px 2pt 1pt red;
+     -webkit-box-shadow: 0px 0px 2pt 1pt red;
+     box-shadow: 0px 0px 2pt 1pt red;
+	/*outline: solid 1px red;*/
 }
 
 div.radioerror {
-	border: solid 1px;
-	border-color: red;
+     -moz-box-shadow: 0px 0px 2pt 1pt red;
+     -webkit-box-shadow: 0px 0px 2pt 1pt red;
+     box-shadow: 0px 0px 2pt 1pt red;
+	/*border: solid 1px;
+	border-color: red;*/
 	clear: both;
 	margin-bottom: 10px;
 	padding-bottom: 6px;
@@ -56,6 +66,9 @@ div.radioerror {
 	height: auto;
 	color: #FFFFFF;
 	font-size: 16px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 
 /* style for disabled divs (when distance < 90km) */
@@ -115,6 +128,10 @@ select {
 	border: solid 3px #c4d001;
 	background-color: #fff;
 	color: #747474;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
 }
 
 input.startbutton {
