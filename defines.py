@@ -7,7 +7,6 @@ WORKPLACE = 'wrk'
 ACCOMODATION = 'acc'
 RESIDENCE = 'res'
 ROOMMATE = 'rmt'
-CHARACTER = 'fig'
 TRANSPORT = 'tra'
 
 GENDER = 'gender'
