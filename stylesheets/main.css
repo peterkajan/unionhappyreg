@@ -52,10 +52,10 @@ div.radioerror {
 	margin-bottom: 10px;
 	padding-bottom: 6px;
 	padding-top: 6px;
-	width: 220px;
+	width: 270px;
 	height: auto;
 	color: #FFFFFF;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 /* style for disabled divs (when distance < 90km) */
@@ -82,18 +82,18 @@ input, textarea {
 	background-color: #fff;
 	border: solid 3px #c4d001;
 	color: #747474;
-	-moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 
 textarea {
 	width: 180px;
 	max-width: 180px;
 	max-height: 60px;
-	-moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 
 }
 
@@ -244,7 +244,7 @@ img.nadpis {
 }
 
 .errorMsg {
-	font-size: 11px;
+	font-size: 14px;
 	color: red;
 	margin-top: 10px;
 	margin-bottom: 10px;
