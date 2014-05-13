@@ -45,9 +45,8 @@ class EmployeeEntity(ndb.Model):
         self.roommate       = emp.roommate    
         self.character      = emp.character 
         
-def persistEmployee( empl ):
-    #todo another email check 
-    key = ndb.Key(EmployeeEntity, empl.email)    
+def persistEmployee( empl, key ):
+    #todo another email check  
     entity = EmployeeEntity(key=key)
     entity.set(empl)
     entity.put()

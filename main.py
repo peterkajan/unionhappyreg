@@ -19,11 +19,8 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 class IntroPage(webapp2.RequestHandler):
 
     def get(self):
-        template_values = {
-            'last': self.request.get('last'),
-        }
         template = JINJA_ENVIRONMENT.get_template('intro.html')
-        self.response.write(template.render(template_values))
+        self.response.write(template.render())
 
 def isEmailValid( email ):
     return re.match(r"[^@]+@[^@]+\.[^@]+", email)
@@ -50,16 +47,6 @@ class MainPage(BaseHandler):
     def get(self):
         self.displayPage()
            
-    def saveToSession(self, empl):
-        self.session[FIRST_NAME] = empl.firstname
-        self.session[LAST_NAME] = empl.lastname
-        self.session[EMAIL] = empl.email
-        self.session[EMPLOYER] = empl.employer
-        self.session[WORKPLACE] = empl.workplace
-        self.session[ACCOMODATION] = empl.accomodation
-        self.session[RESIDENCE] = empl.residence
-        self.session[ROOMMATE] = empl.roommate
-        
     def validateEmail(self, email, errors):
         if not email:
             errors.append( getUnenteredMsg( EMAIL ))
@@ -76,7 +63,6 @@ class MainPage(BaseHandler):
         
         return key
                     
-    #todo using employee
     def validateData(self):
         errors = []
         errorIds = []
@@ -116,14 +102,15 @@ class MainPage(BaseHandler):
             
             
     def post(self):
+        email = self.request.get('email')
+        logging.info('posting, employee: ' + email) 
+        logging.info('post data: ' + unicode(self.request.params)) 
+        
         errors, errorIds, key = self.validateData() 
         if errors:
             self.displayPage( self.request.params, errors, errorIds )
+            logging.info('validation failed') 
             return
-        
-        email = self.request.get('email')
-        logging.info('employee: ' + email)
-        logging.info('post data: ' + unicode(self.request.params)) 
         
         empl = Employee()
         empl.firstname = self.request.get('firstname')
@@ -144,13 +131,14 @@ class MainPage(BaseHandler):
         else:
             empl.transport = 'no'
         
-        persistEmployee( empl )
+        persistEmployee( empl, key )
         try:
             sendMail(empl)
         except:
             logging.exception('Failed to send email %s ', email)    
         
         self.redirect('/results')
+        logging.info('form filled successfully ' + email)
 
         
 def sendMail(empl):
