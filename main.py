@@ -168,6 +168,7 @@ def sendMail(empl):
         RESIDENCE       : empl.residence,
         ROOMMATE        : empl.roommate,
         CHARACTER       : empl.character,
+        TRANSPORT       : transportLabels[empl.transport],
     }
     mail.send_mail(senderAddress, userAddress, subject, body)
     

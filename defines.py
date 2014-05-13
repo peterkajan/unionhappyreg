@@ -176,3 +176,7 @@ accomodationLabels = {
      'no'  : u'bez ubytovania',
 }
 
+transportLabels = {
+     'yes' : u'áno',
+     'no'  : u'bez dopravy',
+}
