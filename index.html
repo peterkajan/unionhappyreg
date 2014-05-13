@@ -87,7 +87,7 @@
         
       <div class="notes" style="position:absolute;"> 
         Ubytovanie si môžu nárokovať tí, ktorých miesto výkonu práce je vzdialené viac ako 90 km od Bratislavy.
-        Ubytovanie je zabezpečené priamo v hoteli Crowne Plaza.
+        Ubytovanie je zabezpečené v hoteli Holiday Inn na Bajkalskej ulici v Bratislave / v hoteli Chopin.
       </div>
       
       <div class="other accomCheck">
@@ -130,23 +130,31 @@
  
  
  
-      <div class="nadpis">
+      <div class="nadpis" style="display:inline-block; float:left;">
         <!-- <img src="../images/appleR.png" alt="little star"/> -->
         DOPRAVA BA-MALINOVO-BA
       </div> 
+      
+        <div class="notes" style="position:absolute;"> 
+            Doprava bude zabezpečená prostredníctvom autobusov, ktoré budú rozvážať zamestnancov z parkoviska pred UNION Poisťovňou a z pred hotela do ELFO Clubu a späť. Časový harmonogram dopravy obdržíte spolu s ostatnými inštrukciami včas.
+       </div>
+      
        <div class="other">
         <label>
             <input type="checkbox" class="check" name="transport" value="yes" {% if p.transport == "yes" %} checked {% endif %} />
-            Mám záujem o dopravu autobusom
+            Mám záujem o dopravu
         </label>        
       </div>
       
-      
+     
+      <br>
+      <br>
       <div class="nadpis">
         <!-- <img src="../images/appleR.png" alt="little star"/> -->
         VEĽKOSŤ TRIČKA
       </div> 
-      <div class="other">
+      
+      <div class="other" style="display:inline-block; float:left;">
          Veľkosť trička 
          <select id="tshirt" name="tshirt" style="width:180px;" class="tshirt {% if 'tshirt' in errorIds %} error {% endif%}">
             <option value="" selected="selected">-- Vyberte veľkosť --</option>
@@ -168,10 +176,10 @@
       <div class="instructions">
       
       	<ul>
-					<li>Doprava nie je organizovaná autobusmi, prosíme Vás, aby ste sa dohodli s kolegami, ktorí majú služobné autá a navzájom si poskytli odvoz, prípadne využili MHD (posádka auta by mala byť minimálne 3 ľudia).</li>
-					<li>Parkovanie pre ubytovaných hostí je zabezpečené v hoteli Crowne Plaza.</li>
+					<li>Doprava z regiónov nie je organizovaná autobusmi, prosíme Vás, aby ste sa dohodli s kolegami, ktorí majú služobné autá a navzájom si poskytli odvoz (posádka auta by mala byť minimálne 3 ľudia).</li>
+					<li>Parkovanie pre ubytovaných hostí je zabezpečené v hoteli Holiday Inn/Chopin, spoplatnené.</li>
 					<li>Podrobnejšie informácie o ubytovaní a inštrukcie k vykazovaniu dochádzky Vám budú zaslané emailom.</li>
-					<li>Ak máte otázky týkajúce sa organizačných pokynov, zasielajte ich na  <a style="color: #D6944B;" href="mailto:union@branda.sk">union@branda.sk</a>.</li>
+					<li>Ak máte otázky týkajúce sa organizačných pokynov, zasielajte ich na  <a style="color: #c4d001;" href="mailto:union@branda.sk">union@branda.sk</a>.</li>
 				</ul>
       
       </div> 
