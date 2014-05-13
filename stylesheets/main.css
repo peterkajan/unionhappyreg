@@ -101,10 +101,10 @@ input, textarea {
 }
 
 
-input[type="submit"] {
-     margin-bottom:50px; 
+#submit {
+     margin-bottom:50px !important; 
      margin-top:20px; 
-     background-color: #c4d001; 
+     background-color: #c4d001 !important; 
      color:#fff; 
      border: none; 
      width:200px; 
@@ -115,12 +115,12 @@ input[type="submit"] {
 }
 
 
-input[type="submit"]:hover {
-     background-color :#b0bb00;
+#submit:hover  {
+     background-color :#b0bb00 !important;
 }
 
 
-input[type="submit"]:active {
+#submit:active {
     position:relative;
     top:1px;
 }
