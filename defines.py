@@ -24,27 +24,35 @@ labels = {
 }
 
 MAIL_FROM = 'union@branda.sk'
-MAIL_SUBJECT = u'Union Happy | Festival Zdravia 2014 - Potvrdenie registrácie'
+MAIL_SUBJECT = u'Union Festival Zdravia 2014 "Happy a svetový" - Potvrdenie registrácie'
 
 MAIL_TEXT = u"""
-Ďakujeme za vyplnenie dotazníku a zároveň potvrdzujeme zaregistrovanie Vašich údajov do databázy potvrdených účastníkov na Union Festival Zdravia 2014.
+Ďakujeme za vyplnenie dotazníku a zároveň potvrdzujeme zaregistrovanie Vašich údajov do databázy potvrdených účastníkov na Union Festival Zdravia, "Happy a svetový".
 
-Pripomíname, že Festival Zdravia Union 2014 sa koná v piatok 13. júna 2014.
+Pripomíname, že festival sa koná v piatok 13. júna 2014.
 
 Vaše registračné údaje si môžete skontrolovať tu:
 
 Krstné meno: %(fn)s
+
 Priezvisko: %(ln)s
+
 Zamestnávatel: %(emp)s
+
 Vaše Pracovisko: %(wrk)s
+
 Doprava Ba-Malinovo-Ba: %(tra)s
+
 Ubytovanie v hoteli Chopin: %(acc)s
+
 Váš preferovaný spolubývajúci: %(rmt)s
+
 Adresa Vášho trvalého bydliska: 
 %(res)s
 
 V prípade akýchkoľvek nejasností, kontaktujte prosím organizačný tím na e-mailovej adrese union@branda.sk.
 Tešíme sa na Vás.
+
 Organizačný tím
 """
 
